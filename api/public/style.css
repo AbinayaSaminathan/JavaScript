@@ -1,0 +1,13 @@
+.card{
+    justify-content: center;
+    width:380px;
+    height: auto;
+    box-shadow:3px 3px 10px gray;
+   
+}
+.container{
+    justify-content: center;
+}
+.item{
+    text-shadow: 3px 3px 1px greenyellow ;
+}

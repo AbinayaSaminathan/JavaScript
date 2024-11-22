@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Form</title>
+    <script src="style.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:cornflowerblue">
+    <div class="container mt-5" style="display: flex; ">
+        <div class="row -lg-12" style="justify-items: center;">
+        <div class="card   ">
+            <form class="p-">
+                <h1 style="justify-content: center;">Sign In</h1>
+                <div class="item1 p-1">
+                <label for="text" name="text">User Name</label><br>
+                <input type="text" id="input1" class=" form-control" name="text" data-bs-toggle="tooltip" title="@UserName" placeholder="Enter the UserName" autocomplete="off">
+                <span id="one" class="text-danger"></span>
+                </div>
+                <div class="item2 p-1">
+                <label for="email"   name="email">Email Adress:</label><br>
+                <input type="email" id="input2" class=" form-control" name="email"data-bs-toggle="tooltip" title="@Email" placeholder="Enter the Email" autocomplete="off">
+                <span id="two" class="text-danger"></span>
+                </div>
+                <div class="item3 p-1">
+                    <label for="password"   name="password">Password</label><br>
+                    <input type="password" id="input3" class=" form-control" name="password" data-bs-toggle="tooltip" title="@Password" placeholder="Enter the Password">
+                    <span id="three" class="text-danger"></span>
+                </div>
+                <div class="item4 p-2">
+                    <a href="#">Forget Password?</a>
+                </div>
+                <div class="item5 p-3">
+                   <button type="button" class=" bg-primary form-control" onclick="myForm()" style=" border: none; border-radius: 10px;"><text style="font-size: 20px;color: white; font-family: serif;">Log in</button>
+                </div>
+                <div class="item6 p-3 text-center">
+                    <text style="font-size: 17px;">Don't have an account? <a href="#" style="font-family: serif;">Sign up</a></text>
+                </div>
+            </form>
+        </div>
+ <div class="list" id="list" style=" margin-left: 350px;">
+    <table class="p-4 mt-1 table-bordered text-center w-100 mx-5" >
+        <thead>
+        <tr>
+          <th>UserName</th>
+          <th>UserEmail</th>
+          <th>Password</th>
+          <th>Update/Delete</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
