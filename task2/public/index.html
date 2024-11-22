@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="style.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="text-center mt-5" style="font-size: 50px;font-family:fantasy;font-style:unset;font-weight:400;">COMPANY</h1> 
+    <div class="row mt-4">
+        <div class="col-sm-4">
+            <label for="text">Company Name<sup class="text-danger">*</sup></label><br>
+            <input type="text" id="input1" name="text" class="form-control" autocomplete="off" placeholder="Company Name">
+            <span id="one" class="text-danger"></span>
+        </div>
+        <div class="col-sm-4">
+            <label for="select">Company Type<sup class="text-danger">*</sup></label><br>
+            <select type="select" id="input2" name="text" class="form-control " >
+                <option value="choose">Choose</option> 
+                <option value="state1">Company1</option>
+                <option value="state2">Company2</option>
+                <option value="state3">Company3</option>
+            </select>
+            <span id="two" class="text-danger"></span>
+        </div>
+        <div class="col-sm-4">
+            <label for="text">GST Number<sup class="text-danger">*</sup></label><br>
+            <input type="text" id="input3" class="form-control" autocomplete="off" name="text" placeholder="GST Number">
+            <span id="three" class="text-danger"></span>
+        </div>
+     </div>
+     <div class="row mt-4">
+        <div class="col-sm-4">
+            <label for="select">State<sup class="text-danger">*</sup></label><br>
+            <select type="select" id="input4" name="text" class="form-control">
+                <option value="choose">Choose</option>
+                <option value="state1">State1</option>
+                <option value="state2">State2</option>
+                <option value="state3">State3</option>
+            </select>
+            <span id="four" class="text-danger"></span>
+        </div>
+        <div class="col-sm-4">
+            <label for="select-field">City<sup class="text-danger">*</sup></label><br>
+            <select id="input5" name="select-field" class="form-control">
+                <option value="choose">Choose</option>
+                <option value="city1">City1</option>
+                <option value="city2">City2</option>
+                <option value="city3">City3</option>
+            </select>
+            <span id="five" class="text-danger"></span>
+        </div>
+        <div class="col-sm-4">
+            <label for="select-field">Country<sup class="text-danger">*</sup></label><br>
+            <select type="select" id="input6" name="select-field" class="form-control">
+                <option value="choose">Choose</option>
+                <option value="country1">Country1</option>
+                <option value="country2">Country2</option>
+                <option value="country3">Country3</option>
+            </select>
+            <span id="six" class="text-danger"></span>
+        </div>
+     </div>
+     <div class="row mt-4">
+        <div class="col-sm-4">
+            <label for="number">Phone Number1<sup class="text-danger">*</sup></label><br>
+            <input type="number" id="input7" autocomplete="off" name="number" class="form-control" placeholder="Phone Number1">
+            <span id="seven" class="text-danger"></span>
+        </div>
+        <div class="col-sm-4">
+            <label for="number">Phone Number2<sup class="text-danger">*</sup></label><br>
+            <input type="number" id="input8" name="number" autocomplete="off" class="form-control"placeholder="Phone Number2">
+            <span id="eight" class="text-danger"></span>
+        </div>
+        <div class="col-sm-4">
+            <label for="text">Contact Person<sup class="text-danger">*</sup></label><br>
+            <input type="text" id="input9" name="text" autocomplete="off" class="form-control" placeholder="Contact Person">
+            <span id="nine" class="text-danger"></span>
+        </div>
+     </div>
+     <div class="col-sm-6 mt-5">
+        <label for="text">Sales Order Transaction<sup class="text-danger">*</sup></label><br>
+        <input type="text" id="input10" name="text"autocomplete="off" class="mt-2 form-control" placeholder="Prefix">
+        <span id="ten" class="text-danger"></span><br>
+        <input type="text" id="input11" name="text"autocomplete="off" class="mt-2 form-control" placeholder="Sefix">
+        <span id="ten1" class="text-danger"></span><br>
+    </div>
+    <div class="row" style="justify-content: end; gap: 5px;">
+        <button type="submit" onclick=" myFunction()"  class="mt-3 bg-danger text-light border-0 rounded " style="height: 50px;width: 125px;"><b style="font-family: inherit;">Submit</b></button>
+        <button type="reset" onclick="myArray()" value="Reset" class="mt-3 bg-success text-light border-0 rounded" style="height: 50px;width: 125px;"><b style="font-family: inherit;">Reset</b></button>
+    </div>
+
+    <table class=" mt-5 text-center" style="width:100%;">
+        <thead style="height: 45px;">
+        <tr>
+          <th>Company</th>
+          <th>GST Number</th>
+          <th>Phone Number</th>
+          <th>Update/Delete</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody" style="height: 45px;">
+            
+        
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

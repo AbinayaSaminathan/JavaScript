@@ -1,0 +1,14 @@
+.card{
+  position:fixed;
+  padding: 10px;
+  box-shadow: 5px 5px  8px gray,5px 5px 4px blue ;
+  border-radius: 15px; 
+  border: 1px solid;
+  box-shadow: 5px;
+   width: 350px;
+}
+.list{
+  display: none;
+
+}
+

@@ -1,0 +1,26 @@
+.container-fluid{
+    padding-top: 100px;
+    height: 730px;
+    background-image: url(assets/cal4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.item{
+    margin-left: 150px;
+    border: none;
+    box-shadow: 1px 1px 20px  lemonchiffon;    
+    width: 580px;
+   height: 550px;
+   box-sizing: content-box;
+   border-radius: 15px;
+}
+button{
+    width: 70px;
+    height: 50px;
+   
+}
+.display #screen{
+    height: 80px;width: 520px; font-size: 40px; text-align: right;
+}
+
